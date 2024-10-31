@@ -4,7 +4,7 @@ from flask import Flask, request, render_template, jsonify
 from PIL import Image
 import io
 
-model = tf.keras.models.load_model(r'python-service/model_path.h5')
+model = tf.keras.models.load_model('model_path.h5')
 
 app = Flask(__name__)
 
